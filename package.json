@@ -1,0 +1,32 @@
+{
+  "name": "CreatorsCornerFStack",
+  "version": "1.0.0",
+  "description": "Full Stack for Creators Co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreatorsCo/cc-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreatorsCo/cc-website/issues"
+  },
+  "homepage": "https://github.com/CreatorsCo/cc-website#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "connect": "^3.7.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "tedious": "^6.3.0"
+  }
+}
