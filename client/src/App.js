@@ -2,7 +2,7 @@ import React from 'react';
 import './stylesheets/App.css';
 
 
-import HoldingPage from './comingsoon/HoldingPage';
+import HoldingPage from '../src/comingsoon/HoldingPage';
 
 export default class App extends React.Component {
   render() {
