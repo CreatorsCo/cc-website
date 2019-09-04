@@ -28,11 +28,11 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 var pool = mysql.createPool({
   connectionLimit: 100,
-  host: 'us-cdbr-iron-east-02.cleardb.net',
-  user: 'b4b4afbc10b55e',
-  password: '83cf1c87',                 //UPDATE TO NEW DATABASEr****
+  host: 'eu-cdbr-west-02.cleardb.net',
+  user: 'bfd21ca577ae43',
+  password: 'aaf5d63d',                 //UPDATE TO NEW DATABASEr****
   port: '3306',
-  database: 'heroku_d4f17cbece4a437',
+  database: 'heroku_a3965f3b046f3b3',
 }); 
 
 
@@ -47,7 +47,7 @@ app.post('/api/add', (req, res) => {
   console.log(req.body.email);
 
 
-  const query_Insert = "INSERT INTO register_usr (name, email) VALUES(?, ?)"
+  const query_Insert = "INSERT INTO register_early (email) VALUES(?)"
 
   pool.getConnection(function (err, connection) {
     if (!!err) {
@@ -73,7 +73,7 @@ app.post('/api/add', (req, res) => {
 });
 
 app.get("/api/databasecheck", (req, res) => {
-  const query_ReadAll = "SELECT * FROM register_usr"
+  const query_ReadAll = "SELECT * FROM register_early"
   pool.getConnection(function (err, connection) {
     if (!!err) {
       res.sendStatus(500);
