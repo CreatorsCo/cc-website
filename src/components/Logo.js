@@ -7,7 +7,6 @@ import Fade from 'react-reveal/Fade';
 import NBLogo from '../assets/NBLogo-mob.svg';
 import LogoBorder from '../assets/LogoBorder-mob.svg';
 
-
 export default class Logo extends React.Component {
     render() {
         return (
