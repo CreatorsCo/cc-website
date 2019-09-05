@@ -6,7 +6,7 @@ export default class EmailForm extends React.Component {
     //Contructors for
     constructor(props) {
         super(props);
-        this.state = { email='' }
+        this.state = { email:'' }
         this.changeEmailHandler = this.changeEmailHandler.bind(this);
     };
 
