@@ -33,7 +33,7 @@ var pool = mysql.createPool({
   password: 'aaf5d63d',                 //UPDATE TO NEW DATABASEr****
   port: '3306',
   database: 'heroku_a3965f3b046f3b3',
-}); 
+});
 
 
 app.get('/api/responsecheck', (req, res) => {
@@ -42,12 +42,10 @@ app.get('/api/responsecheck', (req, res) => {
 
 app.post('/api/add', (req, res) => {
   console.log('attempting to create a new user....');
-
-  console.log(req.body.usrname);
   console.log(req.body.email);
 
 
-  const query_Insert = "INSERT INTO register_early (email) VALUES(?)"
+  const query_Insert = "INSERT INTO register_early (date,email) VALUES(?, ?)"
 
   pool.getConnection(function (err, connection) {
     if (!!err) {
