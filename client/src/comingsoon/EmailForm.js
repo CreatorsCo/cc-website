@@ -38,8 +38,15 @@ export default class EmailForm extends React.Component {
                 console.log(email);
             })
 
+        this.ClearEmail();
+
     }
 
+    ClearEmail() {
+        let emailbox = document.getElementById('input-landing');
+        emailbox.value = `Woohoo! you're officially on our 20% off list! `;
+        emailbox.style.color = 'green';
+    }
 
     render() {
         return (

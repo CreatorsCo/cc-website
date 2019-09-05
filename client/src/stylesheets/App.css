@@ -199,6 +199,7 @@ input#input-landing {
     background-repeat: no-repeat;
     background-size: 3em;
     padding-left: 4em;
+    background-position: 10px 0;
 }
 
 button#submit-landing {
