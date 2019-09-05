@@ -45,7 +45,7 @@ app.post('/api/add', (req, res) => {
   console.log(req.body.email);
 
 
-  const query_Insert = "INSERT INTO register_early (date,email) VALUES(?, ?)"
+  const query_Insert = "INSERT INTO register_early (email) VALUES(?)"
 
   pool.getConnection(function (err, connection) {
     if (!!err) {
@@ -53,7 +53,7 @@ app.post('/api/add', (req, res) => {
       console.log('Error inserting new user... ' + err);
       connection.release();
     } else {
-      connection.query(query_Insert, [req.body.usrname, req.body.email], function (err, result) {
+      connection.query(query_Insert, [req.body.email], function (err, result) {
         if (!!err) {
           console.log('Error inserting new user...' + err);
           res.sendStatus(500);
