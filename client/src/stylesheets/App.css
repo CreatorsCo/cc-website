@@ -376,5 +376,11 @@ button#submit-landing {
         margin: 0 auto;
         margin-top: 2.5em;
     }
+
+    #landing-container{
+        margin-top: -3em;
+    }
+
+
 }
 
