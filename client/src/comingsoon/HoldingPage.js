@@ -13,23 +13,27 @@ export default class HoldingPage extends React.Component {
         return (
             <div id="holdingpage-wrapper">
 
-                    <header>
-                    <DeskNav />
+                <header>
                     <MobNav />
-                    </header>
+                </header>
 
 
                 <div id="landing-container">
+                <DeskNav />
                     <Logo />
-                    <PromotionalHeader />
-                    <EmailForm />
+
+                    <div id="sub-sec-wrapper">
+                        <PromotionalHeader />
+                        <EmailForm />
+                    </div>
+
                     <div id="landing-footer">
-                        <Socials/>
+                        <Socials />
                     </div>
                 </div>
 
 
-            </div>
+            </div >
         )
     }
 };

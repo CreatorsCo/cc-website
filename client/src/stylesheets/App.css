@@ -42,6 +42,8 @@ svg {
     margin: 0 0 0 2px;
 }
 
+
+
 /* N A V I G A T I O N   S Y S T E M  */
 
 /* Position and sizing of burger button */
@@ -127,9 +129,7 @@ svg {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-left: 2em;
     transform: scale(1.2);
-    margin-left: 5em;
     margin-top: 49%;
 }
 
@@ -260,16 +260,18 @@ button#submit-landing {
         /* margin-left: auto; */
     }
     #logo-wrapper {
-        display: flex;
-        flex-direction: row;
-        /* width: 100%; */
         margin: 0 auto;
-        transform: scale(1.2);
+        transform: scale(0.4);
+        width: 100%;
+        margin-top: 5em;
         /* -webkit-transform:scale(2.2); */
-        margin-left: 45%;
-        margin-top: 8%;
-        padding-bottom: 3em;
     }
+
+    #sub-sec-wrapper{
+        margin-top: -5em;
+    }
+
+
     #NBLogo-mob {
         margin-top: -0.05em;
         transform: scale(1);
@@ -313,7 +315,7 @@ button#submit-landing {
     }
     #social-wrapper {
         width: 20%;
-        margin-top: -7em;
+        margin-top: -11em;
         margin-left: 40%;
         transform: scale(2);
     }
@@ -332,7 +334,7 @@ button#submit-landing {
     }
 }
 
-@media not all and (min-resolution:.001dpcm) {
+/* @media not all and (min-resolution:.001dpcm) {
     @media {
         .safari_only#logo-wrapper {
             transform: scale(2.2);
@@ -363,7 +365,7 @@ button#submit-landing {
             color: #D05353;
         }
     }
-}
+} */
 
 @media only screen and (max-width: 768px){
     #logo-wrapper{
@@ -371,3 +373,4 @@ button#submit-landing {
         margin-left: 5%;
     }
 }
+
