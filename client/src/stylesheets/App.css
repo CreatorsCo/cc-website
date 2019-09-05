@@ -364,3 +364,10 @@ button#submit-landing {
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    #logo-wrapper{
+        transform: scale(0.6);
+        margin-left: 5%;
+    }
+}
