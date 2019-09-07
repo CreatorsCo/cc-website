@@ -15,7 +15,7 @@ svg {
 #holdingpage-wrapper {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #comingSoon {
@@ -41,8 +41,6 @@ svg {
 #comingSoon:after {
     margin: 0 0 0 2px;
 }
-
-
 
 /* N A V I G A T I O N   S Y S T E M  */
 
@@ -227,7 +225,7 @@ button#submit-landing {
 
 @media (min-width: 600px) {
     html, body {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .anch-link {
         color: #373a47;
@@ -267,12 +265,9 @@ button#submit-landing {
         margin-top: -3em;
         /* -webkit-transform:scale(2.2); */
     }
-
-    #sub-sec-wrapper{
+    #sub-sec-wrapper {
         margin-top: -7em;
     }
-
-
     #NBLogo-mob {
         margin-top: -0.05em;
         transform: scale(1);
@@ -283,13 +278,9 @@ button#submit-landing {
         margin-left: -7em;
         cursor: pointer;
     }
-
-
     button#submit-landing:hover {
-
         transition: all 2s;
     }
-
     input#input-landing {
         border: 0.003em solid #D0CFCF;
         font-size: 0.4em;
@@ -320,7 +311,6 @@ button#submit-landing {
         margin-left: 40%;
         transform: scale(2);
     }
-    #reg-form-landing {}
     h4 {
         font-size: 2em;
     }
@@ -368,20 +358,119 @@ button#submit-landing {
     }
 } */
 
-@media only screen and (max-width: 768px){
-    #logo-wrapper{
-        transform: scale(0.8);
+@media only screen and (min-width:450px){
+
+    #logo-wrapper {
+        transform: scale(0.6);
+        margin-top: 30%;
     }
 
-    #sub-sec-wrapper{
+    #social-wrapper {
+        width: 100%;
+        margin-top: 0em;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #logo-wrapper {
+        transform: scale(0.8);
+    }
+    #sub-sec-wrapper {
         margin: 0 auto;
         margin-top: 2.5em;
     }
-
-    #landing-container{
+    #landing-container {
         margin-top: -3em;
     }
 
-
 }
 
+@media only screen and (min-width: 600px) {
+    #logo-wrapper {
+        transform: scale(0.6);
+        margin-top: 0%;
+    }
+    #sub-sec-wrapper {
+        margin: 0 auto;
+    }
+    
+    #social-wrapper {
+        width: 20%;
+        margin-top: 0em;
+        margin-left: 40%;
+        transform: scale(2);
+    }
+
+    #input-wrapper{
+        width: 100%;
+    }
+
+    .navbar{
+        width: 50%;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 675px) {
+    #logo-wrapper {
+
+    }
+    #sub-sec-wrapper {
+
+    }
+    
+    #social-wrapper {
+        margin-top: -10%;
+    }
+
+    #input-wrapper{
+
+    }
+
+    .navbar{
+
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    #logo-wrapper {
+        transform: scale(0.5);
+        margin-top: -2%;
+        
+    }
+    #sub-sec-wrapper {
+        margin-top: -8%;
+    }
+    
+    #social-wrapper {
+        margin-top: -12%;
+    }
+
+    #input-wrapper{
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    body{
+        overflow: hidden;
+    }
+    #logo-wrapper {
+        transform: scale(0.3);
+        margin-top: -5%;
+        
+    }
+    #sub-sec-wrapper {
+        margin-top: -12%;
+    }
+    
+    #social-wrapper {
+        margin-top: -12%;
+    }
+
+    #input-wrapper{
+        width: 60%;
+    }
+}

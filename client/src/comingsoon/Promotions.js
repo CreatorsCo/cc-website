@@ -1,14 +1,13 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom'
 
 
 export default class PromotionalHeader extends React.Component {
     render() {
         return (
             <div>
-                <Fade top delay={6000} duration={5000}>
-                    <h4 className="safari_only" id="comingSoon"> Coming Soon </h4>
+                <Fade top delay={4500} duration={5000}>
+                    <h4 className="safari_only" id="comingSoon"> Site coming soon </h4>
                 </Fade>
 
                 <div id="slogan">

@@ -23,6 +23,7 @@ export default class HoldingPage extends React.Component {
                 <DeskNav />
                     <Logo />
 
+
                     <div id="sub-sec-wrapper">
                         <PromotionalHeader />
                         <EmailForm />
