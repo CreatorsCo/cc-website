@@ -10,17 +10,18 @@ import linked from '../assets/socials/linked.svg';
 
 export default class Socials extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super();
         this.state = {}
     }
     render() {
         return (
             <div id="social-wrapper">
-                <SocialIcon ImgURL={fb}/>
-                <SocialIcon ImgURL={insta}/>
-                <SocialIcon ImgURL={twitter}/>
-                <SocialIcon ImgURL={linked}/>
+
+                <SocialIcon ImgURL={fb} />
+                <a href="https://www.instagram.com/creatorscorner__/"><SocialIcon ImgURL={insta} /></a>
+                <a href="https://twitter.com/_creatorscorner"><SocialIcon ImgURL={twitter} /></a>
+               <SocialIcon ImgURL={linked} />
 
             </div>
         )

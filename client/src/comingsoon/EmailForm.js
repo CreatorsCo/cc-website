@@ -23,28 +23,37 @@ export default class EmailForm extends React.Component {
 
         const email = this.state.email;
 
-        let data = JSON.stringify({
-            email
-        });
+        if (email === '') {
+            let emailbox = document.getElementById('input-landing');
+            emailbox.value = `Oops you didn't enter anything?`
+        }
 
-        axios.post(`https://creatorscorner.herokuapp.com/api/add`, data, {
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-                console.log(email);
+        else {
+            let data = JSON.stringify({
+                email
+            });
+
+            axios.post(`https://creatorscorner.herokuapp.com/api/add`, data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
             })
+                .then(res => {
+                    console.log(res);
+                    console.log(res.data);
+                    console.log(email);
+                })
 
-        this.ClearEmail();
+            this.ClearEmail();
+        }
 
     }
 
+
+
     ClearEmail() {
         let emailbox = document.getElementById('input-landing');
-        emailbox.value = `Woohoo! you're officially on our 20% off list! `;
+        emailbox.value = `Woohoo! You're officially on our 20% off list! `;
         emailbox.style.color = 'green';
     }
 

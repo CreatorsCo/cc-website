@@ -1,9 +1,10 @@
 import React from 'react'
 
+import Logo from '../components/Logo';
+
 
 import DeskNav from '../navigation/DeskNav';
 import MobNav from '../navigation/MobNav';
-import Logo from '../components/Logo';
 import PromotionalHeader from './Promotions.js';
 import EmailForm from './EmailForm.js';
 import Socials from '../components/Socials.js';
