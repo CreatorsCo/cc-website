@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const path = require('path');
+var path = require('path');
 const morgan = require('morgan');
 var http = require('http');
 var https = require('https');
@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 app.use(express.static('client/build')); //Middleware
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
+// CREATE SQL POOL METHOD SECURE AND DATABASE CONNECTION MUST ALWAYS BE RELEASED
 var pool = mysql.createPool({
   connectionLimit: 100,
   host: 'eu-cdbr-west-02.cleardb.net',
@@ -35,10 +36,6 @@ var pool = mysql.createPool({
   database: 'heroku_a3965f3b046f3b3',
 });
 
-
-app.get('/api/responsecheck', (req, res) => {
-  res.send({ express: 'SERVER IS ACTIVE!' });
-});
 
 app.post('/api/add', (req, res) => {
   console.log('attempting to create a new user....');
@@ -70,6 +67,8 @@ app.post('/api/add', (req, res) => {
   });
 });
 
+
+
 app.get("/api/databasecheck", (req, res) => {
   const query_ReadAll = "SELECT * FROM register_early"
   pool.getConnection(function (err, connection) {
@@ -90,11 +89,18 @@ app.get("/api/databasecheck", (req, res) => {
   });
 });
 
+//REPSONSE CHECK FOR LIVE SERVER
+app.get('/api/responsecheck', (req, res) => {
+  res.send({ express: 'SERVER IS ACTIVE!' });
+});
+
 
 // Catch all code which routes users back to homepage
 app.get('*', (req, res) => {
-  res.send(path.join(__dirname, 'client', 'build', 'index.html '));
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
+
+
 
 
 
