@@ -23,7 +23,7 @@ export default class Socials extends React.Component {
                     <SocialIcon ImgURL={linked} />
                 </div>
 
-                <h4 id="email-footer"> Get in touch: creatorscornerstudio@gmail.com </h4>
+                <h4 id="email-footer"> Let's talk! creatorscornerstudio@gmail.com </h4>
 
             </div>
 
