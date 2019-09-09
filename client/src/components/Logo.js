@@ -1,13 +1,5 @@
 import React from 'react'
-import ReactSVG from 'react-svg';
 
-import Fade from 'react-reveal/Fade';
-
-
-import NBLogo from '../assets/NBLogo-mob.svg';
-import LogoBorder from '../assets/LogoBorder-mob.svg';
-
-import logomain from '../assets/DeskLogo.png';
 import testerlogo from '../assets/newlogotester.png';
 
 export default class Logo extends React.Component {

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactSVG from 'react-svg';
 
 
 import SocialIcon from './SocialIcon';
@@ -16,14 +15,18 @@ export default class Socials extends React.Component {
     }
     render() {
         return (
-            <div id="social-wrapper">
+            <div id="footer-wrapper">
+                <div id="social-wrapper">
+                    <SocialIcon ImgURL={fb} />
+                    <a href="https://www.instagram.com/creatorscorner__/"><SocialIcon ImgURL={insta} /></a>
+                    <a href="https://twitter.com/_creatorscorner"><SocialIcon ImgURL={twitter} /></a>
+                    <SocialIcon ImgURL={linked} />
+                </div>
 
-                <SocialIcon ImgURL={fb} />
-                <a href="https://www.instagram.com/creatorscorner__/"><SocialIcon ImgURL={insta} /></a>
-                <a href="https://twitter.com/_creatorscorner"><SocialIcon ImgURL={twitter} /></a>
-               <SocialIcon ImgURL={linked} />
+                <h4 id="email-footer"> Get in touch: creatorscornerstudio@gmail.com </h4>
 
             </div>
+
         )
     }
 };

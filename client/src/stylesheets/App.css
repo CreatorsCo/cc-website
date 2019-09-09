@@ -223,6 +223,12 @@ button#submit-landing {
     transform: scale(0.5);
 }
 
+h4#email-footer{
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
 @media (min-width: 600px) {
     html, body {
         /* overflow: hidden; */
@@ -323,6 +329,12 @@ button#submit-landing {
     #comingSoon {
         width: 34.8%;
     }
+
+    h4#email-footer{
+        font-size: 1em;
+    }
+
+
 }
 
 /* @media not all and (min-resolution:.001dpcm) {
@@ -357,6 +369,16 @@ button#submit-landing {
         }
     }
 } */
+
+@media only screen and (max-width:350px){
+    h4#email-footer{
+        text-align: center;
+        width: 100%;
+        margin-top: 1em;
+        font-size: 0.5em;
+        
+    }
+}
 
 @media only screen and (min-width:450px){
 
