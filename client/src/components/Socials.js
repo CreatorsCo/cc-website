@@ -17,7 +17,7 @@ export default class Socials extends React.Component {
         return (
             <div id="footer-wrapper">
                 <div id="social-wrapper">
-                    <SocialIcon ImgURL={fb} />
+                    <a href="https://www.facebook.com/creatorscorner__-107173380667529/"><SocialIcon ImgURL={fb} /></a>
                     <a href="https://www.instagram.com/creatorscorner__/"><SocialIcon ImgURL={insta} /></a>
                     <a href="https://twitter.com/_creatorscorner"><SocialIcon ImgURL={twitter} /></a>
                     <SocialIcon ImgURL={linked} />
