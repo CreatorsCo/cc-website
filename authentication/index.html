@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hangfire</title>
+</head>
+
+<body>
+    <header>
+        <h1> Hangfire authentication ------------- </h1>
+        <h2> {SERVER IS UP AND RUNNING} </h2>
+    </header>
+
+    <form action="/authorize" method="POST">
+        <label> user </label>
+        <input type="text" name="authname">
+        <br>
+
+        <label> password </label>
+        <input type="password" name="authpass">
+
+        <button type="submit" name="login"> login </button>
+    </form>
+
+<!-- 
+    <script type="text/javascript">
+        console.log("running axios script");
+
+        // function post() {
+        //     event.preventDefault();
+        //     console.log('working');
+        //     axios.post(`https://creatorscorner.herokuapp.com/api/authorize`, data{
+
+        //     })
+        // }
+    </script> -->
+
+
+</body>
+
+</html>
