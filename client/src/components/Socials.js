@@ -20,7 +20,7 @@ export default class Socials extends React.Component {
                     <a href="https://www.facebook.com/creatorscorner__-107173380667529/"><SocialIcon ImgURL={fb} /></a>
                     <a href="https://www.instagram.com/creatorscorner__/"><SocialIcon ImgURL={insta} /></a>
                     <a href="https://twitter.com/_creatorscorner"><SocialIcon ImgURL={twitter} /></a>
-                    <SocialIcon ImgURL={linked} />
+                    <a href="https://www.linkedin.com/company/creators-corner-ltd"><SocialIcon ImgURL={linked} /></a>
                 </div>
 
                 <h4 id="email-footer"> Let's talk! creatorscornerstudio@gmail.com </h4>
